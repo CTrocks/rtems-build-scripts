@@ -38,7 +38,7 @@ set -ex
 
 check_install()
 {
-    INSTALLED_VER=$($1 --version | grep "$2 $GCC_MAJOR_VERSION")
+    INSTALLED_VER=$($1 --version | grep "$2 $GCC_MAJOR_VER")
     if [ -z "$INSTALLED_VER" ]; then
         log_msg err "GCC-$GCC_MAJOR_VER $1 couldn't be setup."
         exit -1
