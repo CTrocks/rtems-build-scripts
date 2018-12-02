@@ -32,7 +32,7 @@ log_msg info "Script started ($0)."
 
 # TARGET_... variables have to be provided additionally. These vars
 # are not part of any script within this project
-if [ -z "$TARGET_ARCH"]; then
+if [ -z "$TARGET_ARCH" ]; then
     log_msg err "Mssing TARGET_ARCH! No target architecture specified."
     exit 234
 fi
