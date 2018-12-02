@@ -33,22 +33,22 @@ log_msg info "Script started ($0)."
 log_msg info "Installing required packages..."
 apt-get -qq update &&
 apt-get -qq -y install \
-            gcc-7 \
-            g++-7 \
-            gnat-7 \
-            texinfo \
-            pax  \
-		    libncurses5 \
-            make \
-            git \
-            cmake \
-            make \
-            bison \
-            flex \
-		    python3.6 \
-            python3.6-dev \
-		    python3-setuptools \
-            python \
-		    libreadline
+        gcc-7 \
+        g++-7 \
+        gnat-7 \
+        texinfo \
+        pax  \
+	libncurses5 \
+        make \
+        git \
+        cmake \
+        make \
+        bison \
+        flex \
+	python3.6 \
+        python3.6-dev \
+	python3-setuptools \
+        python \
+	libreadline5
 
 log_msg info "Script finished ($0)."
