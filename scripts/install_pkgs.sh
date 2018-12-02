@@ -31,7 +31,7 @@ set -ex
 log_msg info "Script started ($0)."
 
 log_msg info "Installing required packages..."
-apt-get update -qq update &&
+apt-get -qq update &&
 apt-get -qq -y install \
             gcc-7 \
             g++-7 \
