@@ -49,6 +49,8 @@ apt-get -qq -y install \
 	python3.6 \
         python3.6-dev \
 	python3-setuptools \
+	python2.7 \
+	python2.7-dev \
         python \
 	libreadline5
 
