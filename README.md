@@ -16,3 +16,7 @@ Once the variables are set, run the mentioned script:
 ./run.sh
 ```
 
+## Changing build parameters
+
+Currently, the configuration of RTEMS Source Builder, which is used to build the toolchain, can only be set by editing script `config.sh` (folder `scripts`). By default, Ada language support is enabled. For further information on parameters of RTEMS Source Builder, check related [documentation](https://docs.rtems.org/branches/master/rsb/source-builder.html).
+
