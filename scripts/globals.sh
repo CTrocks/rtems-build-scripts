@@ -56,6 +56,6 @@ log_msg()
             COLOR=  # just use default
     esac
 
-    echo -e "$TS $COLOR[$PREFIX]: $MSG"
+    echo -e "$TS $COLOR[$PREFIX]: $MSG $SET"
 }
 
