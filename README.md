@@ -16,6 +16,8 @@ Once the variables are set, run the mentioned script:
 ./run.sh
 ```
 
+WARNING: The build will change GCC version on your system. I will provide a Dockerfile as soon as possible so that running the build won't require any changes in your system configuration! 
+
 ## Changing build parameters
 
 Currently, the configuration of RTEMS Source Builder, which is used to build the toolchain, can only be set by editing script `config.sh` (folder `scripts`). By default, Ada language support is enabled. For further information on parameters of RTEMS Source Builder, check related [documentation](https://docs.rtems.org/branches/master/rsb/source-builder.html).
