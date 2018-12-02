@@ -29,7 +29,6 @@ RTEMS_VER=5
 RSB_GIT_URL="https://github.com/RTEMS/rtems-source-builder"
 
 BUILD_STAGE_DIR="build"
-INSTALL_BASE_PATH="/opt/rtems"
 BUILD_ARGS="--with-ada"
 
 
