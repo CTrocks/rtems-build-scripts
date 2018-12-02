@@ -40,9 +40,9 @@ cd $BUILD_STAGE_PATH
 # enter RSB and run build
 log_msg info "Starting build now..."
 cd $RSB_DIR/rtems
-../sb-set-builder \
-    --prefix=$INSTALL_DIR/$RTEMS_VER \
-    $RTEMS_VER/rtems-$TARGET_ARCH \
-    $BUILD_ARGS
+../source-builder/sb-set-builder \
+                    --prefix=$INSTALL_DIR/$RTEMS_VER \
+                    $RTEMS_VER/rtems-$TARGET_ARCH \
+                    $BUILD_ARGS
 
 log_msg info "Script finished ($0)."
