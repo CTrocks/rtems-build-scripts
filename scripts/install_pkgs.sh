@@ -45,6 +45,7 @@ apt-get -qq -y install \
         make \
         bison \
         flex \
+	unzip \
 	python3.6 \
         python3.6-dev \
 	python3-setuptools \
