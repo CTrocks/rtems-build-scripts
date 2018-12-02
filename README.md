@@ -16,7 +16,7 @@ Once the variables are set, run the mentioned script:
 ./run.sh
 ```
 
-WARNING: The build will change GCC version on your system. I will provide a Dockerfile as soon as possible so that running the build won't require any changes in your system configuration! 
+WARNING: The build will change GCC version on your system. I will provide a Dockerfile as soon as possible so that running the build won't require any changes of your system configuration! The corresponding file will be located in a separate repository:  [RTEMS Toolchain Build with Docker](https://github.com/CTrocks/rtems-build-defs-docker)
 
 ## Changing build parameters
 
