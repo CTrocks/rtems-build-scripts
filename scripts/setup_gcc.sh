@@ -36,22 +36,12 @@ source ./config.sh
 
 set -ex
 
-check_install()
-{
-    INSTALLED_VER=$($1 --version | grep "$2 $GCC_MAJOR_VER")
-    if [ -z "$INSTALLED_VER" ]; then
-        log_msg err "GCC-$GCC_MAJOR_VER $1 couldn't be setup."
-        exit -1
-    fi
-}
-
 log_msg info "Setting up GCC-$GCC_MAJOR_VER"
 
 update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-$GCC_MAJOR_VER 60 --slave /usr/bin/g++ g++ /usr/bin/g++-$GCC_MAJOR_VER
 update-alternatives --config gcc
 
-check_install "gcc" "gcc version"
-check_install "g++" "gcc version"
-check_install "gnatmake" "GNATMAKE"
+# TODO: check if GCC setup was successful
+#       -> parsing --version output is not suitable since different among dists
 
 log_msg info "Script finished ($0)."
